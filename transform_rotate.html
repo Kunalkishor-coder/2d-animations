@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>transform rotate</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container xy-center">
+
+		<div class="box" onmouseover="addEffect()" onmouseout="removeEffetc()">
+			KUNAL 	
+		</div>
+
+		<div class="box" onmouseover="addEffect()" onmouseout="removeEffetc()">
+			KISHOR
+		</div>
+
+	</div>
+
+
+
+	<script>
+		function addEffect(){
+			var x=document.getElementsByClassName('box')[0];
+			x.style.background="black";
+			x.style.transition="3s";
+		}
+
+		function removeEffetc(){
+			var x=document.getElementsByClassName('box')[0];
+			x.style.background="green";
+			x.style.transition="1s";
+		}
+	</script>
+</body>
+</html>
